@@ -5,6 +5,7 @@ import { getLocale } from '@/utils/locale';
 
 const locale = getLocale();
 
+// ice背景下如何提供应用实例
 const appConfig: IAppConfig = {
   app: {
     rootId: 'ice-container',

@@ -194,4 +194,5 @@ const routerConfig: IRouterConfig[] = [
     ],
   },
 ];
+// 存在该文件，默认开启配置型路由
 export default routerConfig;

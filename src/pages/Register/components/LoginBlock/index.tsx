@@ -18,6 +18,7 @@ export interface RegisterProps {
 }
 
 export default function RegisterBlock() {
+  // 定义表单的state
   const [postData, setValue] = useState({
     email: '',
     password: '',
@@ -38,6 +39,7 @@ export default function RegisterBlock() {
   }, isRunning ? 1000 : null);
 
   const formChange = (value: RegisterProps) => {
+    // 触发onchange来修改state,没有双向绑定？？
     setValue(value);
   };
 
@@ -157,6 +159,7 @@ export default function RegisterBlock() {
   );
 }
 
+// 定义组件的prop类型，避免类型检查报错
 RegisterBlock.propTypes = {
   // eslint-disable-next-line react/no-unused-prop-types
   value: PropTypes.object,
